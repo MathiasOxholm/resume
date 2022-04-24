@@ -1,0 +1,27 @@
+.container {
+  padding-block: 10rem;
+  padding-inline: 4rem;
+}
+
+.main {
+  min-height: 100vh;
+  width: 100%;
+  max-width: 1248px;
+  margin-inline: auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.row {
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 3.5rem;
+}
+
+.githubProjects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}

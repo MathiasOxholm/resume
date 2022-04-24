@@ -1,0 +1,27 @@
+@use "mixins";
+
+.ListItem {
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    margin: 0;
+  }
+  p,
+  a {
+    margin: 0;
+  }
+
+  a {
+    transition: var(--transition);
+    position: relative;
+
+    //@include HoverLine;
+  }
+}
+
+.inner {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}

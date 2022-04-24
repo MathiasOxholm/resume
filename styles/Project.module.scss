@@ -1,0 +1,25 @@
+.Project {
+  padding: 1rem;
+  border: 1px solid var(--dark-1);
+  flex: 1;
+  min-width: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: var(--transition);
+
+  h3,
+  p {
+    margin: 0;
+  }
+
+  &::before {
+    display: none;
+  }
+
+  &:hover {
+    border-color: var(--light-1);
+  }
+}

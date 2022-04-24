@@ -1,0 +1,45 @@
+.Card {
+  padding: 3.5rem 2rem;
+  border: 1px solid var(--dark-1);
+  max-width: 560px;
+  position: relative;
+  transition: var(--transition);
+
+  h2 {
+    margin-top: 2rem;
+  }
+
+  p {
+    font-size: 20px;
+  }
+  img {
+    object-fit: contain;
+  }
+
+  a {
+    color: var(--light-b);
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.5rem;
+    background-color: var(--accent-b);
+    color: var(--light-b);
+    padding-inline: 1.75rem;
+    margin-top: 2.5rem;
+    user-select: none;
+    font-family: var(--heading-font);
+    text-transform: uppercase;
+    font-size: 12px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  &:hover {
+    border-color: var(--light-1);
+  }
+}

@@ -1,0 +1,58 @@
+.Header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-inline: 4rem;
+  padding-block: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+
+.logo {
+  cursor: pointer;
+  transition: var(--transition);
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.menuToggle {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+
+  span {
+    width: 4rem;
+    height: 2px;
+    background-color: var(--light-b);
+    transition: var(--transition);
+    transform-origin: right;
+
+    &[data-number="1"] {
+      transform-origin: left;
+    }
+
+    &[data-number="3"] {
+      transform-origin: left;
+    }
+  }
+
+  &:hover {
+    span {
+      &[data-number="1"] {
+        transform: scaleX(0.85) translateX(-4px);
+      }
+      &[data-number="2"] {
+        transform: scaleX(0.85) translateX(4px);
+      }
+      &[data-number="3"] {
+        transform: scaleX(0.85) translateX(-4px);
+      }
+    }
+  }
+}
