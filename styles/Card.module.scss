@@ -12,7 +12,11 @@
   }
 
   h2 {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
+
+    @include mq(lg) {
+      margin-top: 2rem;
+    }
   }
 
   p {
@@ -33,12 +37,18 @@
     height: 3.5rem;
     background-color: var(--accent-b);
     color: var(--light-b);
-    padding-inline: 1.75rem;
-    margin-top: 2.5rem;
+    width: 100%;
+    margin-top: 1.5rem;
     user-select: none;
     font-family: var(--heading-font);
     text-transform: uppercase;
     font-size: 12px;
+
+    @include mq(lg) {
+      padding-inline: 1.75rem;
+      margin-top: 2.5rem;
+      width: fit-content;
+    }
 
     &::before {
       display: none;

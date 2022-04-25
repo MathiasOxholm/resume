@@ -1,3 +1,5 @@
+@use "mixins" as *;
+
 .Project {
   padding: 1rem;
   border: 1px solid var(--dark-1);
@@ -9,6 +11,10 @@
   flex-direction: column;
   gap: 0.5rem;
   transition: var(--transition);
+
+  @include mq-max(lg) {
+    aspect-ratio: 16 / 7;
+  }
 
   h3,
   p {
