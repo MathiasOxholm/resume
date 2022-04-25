@@ -11,10 +11,12 @@
   justify-content: space-between;
   align-items: center;
   z-index: 99;
+  background-color: var(--dark-b);
 
   @include mq(lg) {
     padding-inline: 4rem;
     padding-block: 2rem;
+    background-color: transparent;
   }
 }
 

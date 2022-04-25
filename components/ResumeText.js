@@ -93,7 +93,7 @@ const ResumeText = {
         title2: "Developer",
         location: "Superego - Horsens",
         description:
-          "At Superego, I am the lead developer of all custom solutions built in WordPress. PHP, HTML, SCSS, JS / jQuery, gsap, Github and more are some of the technologies I use on a daily basis.",
+          "At Superego, I am the lead developer on all custom solutions built in WordPress. PHP, HTML, SCSS, JS / jQuery, gsap, Github and more are some of the technologies I use on a daily basis.",
         timeFrame: "Apr 2021 - Now",
         cases: ["leinvest.dk", "kommpas.dk", "zurface.dk"],
       },
