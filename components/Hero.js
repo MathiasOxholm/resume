@@ -4,17 +4,55 @@ import ListItem from "./ListItem";
 import Instagram from "../components/svg/Instagram";
 import Github from "../components/svg/Github";
 import LinkedIn from "../components/svg/LinkedIn";
+import { useRouter } from "next/router";
+import { gsap } from "gsap/dist/gsap";
+
+// GSAP Animation
+if (typeof window !== "undefined") {
+  gsap.from("#before", {
+    scaleY: 0,
+    duration: 1,
+    ease: "expo.Out",
+    delay: 0.2,
+  });
+
+  gsap.from("#HeroImage img", {
+    y: "-100%",
+    duration: 1,
+    ease: "expo.Out",
+    delay: 0.5,
+  });
+}
+
+const HeroText = {
+  da: {
+    hero: "frontend udvikler med 3 års erfaring i specialudvikling af websites, -shops og -apps.",
+    phone: "Telefon",
+    age: "Alder",
+    address: "Adresse",
+    about: "Kort fortalt",
+  },
+  en: {
+    hero: "Frontend developer with 3 years of experience in custom development of websites, shops and apps.",
+    phone: "Phone",
+    age: "Age",
+    address: "Address",
+    about: "About me",
+  },
+};
 
 const Hero = () => {
+  let router = useRouter();
+  const { locale } = router;
+  const t = HeroText[locale];
+
   return (
     <div id="Hero" className={styles.Hero}>
-      <h1 className={styles.title}>
-        frontend udvikler med 3 års erfaring i specialudvikling af websites,
-        -shops og -apps.
-      </h1>
+      <h1 className={styles.title}>{t.hero}</h1>
 
       <div className={styles.row}>
-        <div className={styles.featuredImage}>
+        <div id="HeroImage" className={styles.featuredImage}>
+          <div id="before" className={styles.before}></div>
           <Image
             src="/oxholm-cv-profil.jpg"
             width={270}
@@ -25,7 +63,7 @@ const Hero = () => {
         </div>
         <div className={styles.about}>
           <div className={styles.inner}>
-            <h2 className="h3">Kort fortalt</h2>
+            <h2 className="h3">{t.about}</h2>
             <p className={styles.description}>
               Færdiguddannet Professionsbachelor i International Webudvikling
               (Formidling og design) på IBA Erhvervsakademi Kolding. Jeg
@@ -38,9 +76,9 @@ const Hero = () => {
           </div>
           <div className={styles.info}>
             <h2 className="h3">Info</h2>
-            <ListItem title="Alder" body="31 / 05 / 1995" />
+            <ListItem title={t.age} body="31 / 05 / 1995" />
             <ListItem
-              title="Telefon"
+              title={t.phone}
               body="+45 20 31 60 93"
               href="tel:+4520316993"
             />
@@ -49,7 +87,7 @@ const Hero = () => {
               body="hello@mathiasoxholm.dk"
               href="mailto:hello@mathiasoxholm.dk"
             />
-            <ListItem title="Adresse" body="6000 Kolding" />
+            <ListItem title={t.address} body="6000 Kolding" />
             <ListItem title="Connect">
               <Github />
               <LinkedIn />

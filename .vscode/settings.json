@@ -1,0 +1,6 @@
+{
+    "files.exclude": {
+        "public/locales/da": true,
+        "public/locales": true
+    }
+}

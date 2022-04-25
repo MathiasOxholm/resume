@@ -1,21 +1,21 @@
 import styles from "../styles/Card.module.scss";
 import Image from "next/image";
 
-const Card = () => {
+const Card = ({ buttonText, text, text2, text3 }) => {
   return (
     <div className={styles.Card}>
       <Image src="/readr.svg" width={144} height={50} alt="Readr logo" />
       <h2>Readr</h2>
       <p>
-        PWA / TWA bygget med React og Firebase. Læs mere om projektet på{" "}
+        {text}{" "}
         <a href="https://getreadr.online" target="_blank" rel="noreferrer">
           getreadr.online
         </a>{" "}
-        eller gå direkte til webappen på{" "}
+        {text2}{" "}
         <a href="https://readr.online" target="_blank" rel="noreferrer">
           readr.online
         </a>
-        . Login med Google eller Facebook er påkrævet.
+        . {text3}
       </p>
       <a
         href="https://play.google.com/store/apps/details?id=online.readr.twa"
@@ -23,7 +23,7 @@ const Card = () => {
         target="_blank"
         rel="noreferrer"
       >
-        Åben i Google Play
+        {buttonText}
       </a>
     </div>
   );

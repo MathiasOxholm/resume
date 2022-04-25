@@ -1,4 +1,30 @@
 import styles from "../styles/Experience.module.scss";
+import { gsap } from "gsap/dist/gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import clsx from "clsx";
+
+// GSAP Animation
+if (typeof window !== "undefined") {
+  gsap.registerPlugin(ScrollTrigger);
+  const Experiences = gsap.utils.toArray(".Experience");
+
+  Experiences.forEach((Experience) => {
+    const animateIn = gsap.timeline({
+      scrollTrigger: {
+        trigger: Experience,
+        start: "center bottom",
+        toggleActions: "play none none reverse",
+      },
+    });
+
+    animateIn.from(Experience, {
+      y: 80,
+      opacity: 0,
+      duration: 0.75,
+      ease: "power4.Out",
+    });
+  });
+}
 
 const Experience = ({
   title,
@@ -9,7 +35,7 @@ const Experience = ({
   cases,
 }) => {
   return (
-    <div className={styles.Experience}>
+    <div className={clsx(styles.Experience, "Experience")}>
       <div className={styles.info}>
         <h3 className="h2">
           {title} <br />

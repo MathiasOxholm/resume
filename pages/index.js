@@ -4,96 +4,115 @@ import Experience from "../components/Experience";
 import SectionHeading from "../components/SectionHeading";
 import Card from "../components/Card";
 import Project from "../components/Project";
+import { useRouter } from "next/router";
+import ResumeText from "../components/locale";
 
 export default function Home() {
+  let router = useRouter();
+  const { locale } = router;
+  const t = ResumeText[locale];
+
+  const jobs = t.jobs;
+  const educations = t.educations;
+  const privateProjects = t.privateProjects;
+
   return (
     <div className={styles.container}>
       <main className={styles.main}>
         <Hero />
 
         <div className={styles.ExperienceList}>
-          <SectionHeading title="Erfaring" />
+          <SectionHeading title={t.experience} />
+
           <Experience
-            title="Frontend"
-            title2="Developer"
-            location="Superego - Horsens"
-            timeFrame="Apr 2021 - Nu"
-            description="Hos Superego er jeg lead developer på alle custom løsninger i WordPress. PHP, HTML, SCSS, JS / jQuery, gsap, Github mm. er nogle af de teknologier jeg benytter mig af til dagligt."
-            cases={["leinvest.dk", "kommpas.dk", "zurface.dk"]}
+            title={jobs.superego.title}
+            title2={jobs.superego.title2}
+            location={jobs.superego.location}
+            timeFrame={jobs.superego.timeFrame}
+            description={jobs.superego.description}
+            cases={jobs.superego.cases}
           />
           <Experience
-            title="Grafisk Ansvarlig "
-            title2="og Webudvikler"
+            title={jobs.StepUp.title}
+            title2={jobs.StepUp.title2}
             location="StepUp Media ApS - Kolding"
             timeFrame="Feb 2019 - Mar 2021"
             description="Udover min praktik, var jeg fuldtidsansat i ca. 2 år og siden fastansættelsen fik jeg lavet over 70 unikke website og webshop designs i Adobe XD. Derudover har jeg selv kodet 24 af siderne op i WordPress."
-            cases={["circusgin.com", "rhetor.dk"]}
+            cases={jobs.StepUp.cases}
           />
           <Experience
-            title="Webudvikler"
-            title2="- Praktikant"
+            title={jobs.StepUpIntern.title}
+            title2={jobs.StepUpIntern.title2}
             location="StepUp Media ApS - Kolding"
             timeFrame="Aug 2018 - Okt 2018"
-            description="3 måneders virksomhedspraktik via Webudvikler uddannelsen."
+            description={jobs.StepUpIntern.description}
           />
           <Experience
-            title="Webudvikler"
-            title2="- Studiearbejde"
+            title={jobs.SecPro.title}
+            title2={jobs.SecPro.title2}
             location="SecPro Sikring A/S - Kolding"
             timeFrame="Aug 2017 - Nov 2017"
-            description="Projektbaseret studiejob under Multimediedesigneren. WordPress + WooCommerce shop management."
+            description={jobs.SecPro.description}
           />
           <Experience
-            title="Webudvikler"
-            title2="- Praktikant"
+            title={jobs.GejstGruppen.title}
+            title2={jobs.GejstGruppen.title2}
             location="GejstGruppen ApS - Kolding"
             timeFrame="Jan 2017 - Apr 2017"
-            description="3 måneders virksomhedspraktik via Multimediedesigner uddannelsen. Udarbejdelse af skræddersyet spørgeskema i PHP."
+            description={jobs.GejstGruppen.description}
           />
         </div>
 
         <div className={styles.ExperienceList}>
-          <SectionHeading title="Uddanelse" />
+          <SectionHeading title={t.education} />
           <Experience
-            title="International Webudvikling"
-            title2="- Formidling og design"
+            title={educations.Webdeveloper.title}
+            title2={educations.Webdeveloper.title2}
             location="IBA Erhvervsakademi Kolding"
             timeFrame="Aug 2017 - Okt 2019"
           />
           <Experience
-            title="Multimediedesigner"
-            title2="m. speciale i videoproduktion"
+            title={educations.MultimedieDesigner.title}
+            title2={educations.MultimedieDesigner.title2}
             location="IBA Erhvervsakademi Kolding"
             timeFrame="Aug 2015 - Nov 2017"
           />
           <Experience
-            title="STX Studentereksamen"
+            title={educations.STX.title}
             location="Munkensdam gymnasium - Kolding"
             timeFrame="Aug 2011 - Jun 2014"
           />
         </div>
 
         <div>
-          <SectionHeading title="Private projekter" />
+          <SectionHeading title={t.projects} />
           <div className={styles.row}>
-            <Card />
+            <Card
+              text={t.Readr.text}
+              text2={t.Readr.text2}
+              text3={t.Readr.text3}
+              buttonText={t.Readr.button}
+            />
             <div className={styles.githubProjects}>
               <Project
-                title="Weather app"
-                body="Bygget i Next.js"
+                title={privateProjects.weather.title}
+                body={privateProjects.weather.body}
                 href="https://github.com/MathiasOxholm/weather-app"
               />
               <Project
-                title="Linktree"
-                body="Bygget i Next.js"
+                title={privateProjects.tree.title}
+                body={privateProjects.tree.body}
                 href="https://github.com/MathiasOxholm/linktree"
               />
               <Project
-                title="Calculator"
-                body="Bygget i Next.js"
+                title={privateProjects.calculator.title}
+                body={privateProjects.calculator.body}
                 href="https://github.com/MathiasOxholm/calculator"
               />
-              <Project title="This or that" body="Bygget i React Native" />
+              <Project
+                title={privateProjects.thisOrThat.title}
+                body={privateProjects.thisOrThat.body}
+              />
             </div>
           </div>
         </div>
