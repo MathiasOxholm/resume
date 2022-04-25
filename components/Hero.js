@@ -26,16 +26,18 @@ if (typeof window !== "undefined") {
 
 const HeroText = {
   da: {
-    hero: "frontend udvikler med 3 års erfaring i specialudvikling af websites, -shops og -apps.",
+    hero: "frontend udvikler med 5 års erfaring i specialudvikling af websites, -shops og -apps.",
     phone: "Telefon",
     age: "Alder",
+    date: "31 / 05 / 1995",
     address: "Adresse",
     about: "Kort fortalt",
   },
   en: {
-    hero: "Frontend developer with 3 years of experience in custom development of websites, shops and apps.",
+    hero: "Frontend developer with 5 years of experience in creating websites, shops and apps.",
     phone: "Phone",
     age: "Age",
+    date: "05 / 31 / 1995",
     address: "Address",
     about: "About me",
   },
@@ -76,7 +78,7 @@ const Hero = () => {
           </div>
           <div className={styles.info}>
             <h2 className="h3">Info</h2>
-            <ListItem title={t.age} body="31 / 05 / 1995" />
+            <ListItem title={t.age} body={t.date} />
             <ListItem
               title={t.phone}
               body="+45 20 31 60 93"

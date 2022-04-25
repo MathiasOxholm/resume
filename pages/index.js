@@ -5,7 +5,7 @@ import SectionHeading from "../components/SectionHeading";
 import Card from "../components/Card";
 import Project from "../components/Project";
 import { useRouter } from "next/router";
-import ResumeText from "../components/locale";
+import ResumeText from "../components/ResumeText";
 
 export default function Home() {
   let router = useRouter();
