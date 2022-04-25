@@ -1,14 +1,21 @@
+@use "mixins" as *;
+
 .Header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding-inline: 4rem;
-  padding-block: 2rem;
+  padding-inline: 1.5rem;
+  padding-block: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 99;
+
+  @include mq(lg) {
+    padding-inline: 4rem;
+    padding-block: 2rem;
+  }
 }
 
 .logo {

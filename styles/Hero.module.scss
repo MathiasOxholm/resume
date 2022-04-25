@@ -1,7 +1,13 @@
+@use "mixins" as *;
+
 .Hero {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 1.5rem;
+
+  @include mq(lg) {
+    gap: 4rem;
+  }
 }
 
 .title {
@@ -10,9 +16,15 @@
 
 .row {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 3.5rem;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  @include mq(lg) {
+    gap: 3.5rem;
+    align-items: center;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .featuredImage {
@@ -40,8 +52,14 @@
 
 .about {
   display: flex;
-  gap: 3.5rem;
-  flex: 3;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  @include mq(lg) {
+    flex-direction: row;
+    flex: 3;
+    gap: 3.5rem;
+  }
 
   h2 {
     margin-bottom: 1rem;
@@ -49,9 +67,13 @@
 }
 
 .description {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin-bottom: 0;
   margin-top: 0;
+
+  @include mq(lg) {
+    font-size: 1.5rem;
+  }
 }
 
 .info {

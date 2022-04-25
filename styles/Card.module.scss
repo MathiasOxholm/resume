@@ -1,9 +1,15 @@
+@use "mixins" as *;
+
 .Card {
-  padding: 3.5rem 2rem;
+  padding: 2.5rem 1.5rem;
   border: 1px solid var(--dark-1);
   max-width: 560px;
   position: relative;
   transition: var(--transition);
+
+  @include mq(lg) {
+    padding: 3.5rem 2rem;
+  }
 
   h2 {
     margin-top: 2rem;

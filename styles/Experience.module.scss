@@ -1,9 +1,19 @@
+@use "mixins" as *;
+
 .Experience {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding-block: 4rem;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-block: 2.5rem;
   border-bottom: 1px solid var(--dark-1);
+  gap: 1rem;
+
+  @include mq(lg) {
+    padding-block: 4rem;
+    align-items: center;
+    flex-direction: row;
+    gap: 0;
+  }
 }
 
 .info {
@@ -19,12 +29,22 @@
 .divider {
   width: 1px;
   background-color: var(--dark-1);
+  display: none;
+
+  @include mq(lg) {
+    display: flex;
+  }
 }
 
 .extraInfo {
   display: flex;
-  flex-direction: row;
-  gap: 1rem;
+  flex-direction: column;
+  gap: 0.25rem;
+
+  @include mq(lg) {
+    gap: 1rem;
+    flex-direction: row;
+  }
 
   p {
     margin: 0;

@@ -1,3 +1,5 @@
+@use "mixins" as *;
+
 :root {
   --dark-b: #171717;
   --dark-1: #454545;
@@ -25,6 +27,10 @@ body {
   font-family: var(--body-font);
   color: var(--light-1);
   font-variant-numeric: lining-nums;
+}
+
+#__next {
+  overflow-x: hidden;
 }
 
 ::selection {
@@ -84,26 +90,46 @@ h6 {
 
 h1,
 .h1 {
-  font-size: 2.5rem;
-  line-height: 3rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+
+  @include mq(lg) {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
 }
 
 h2,
 .h2 {
-  font-size: 2rem;
-  line-height: 38px;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+
+  @include mq(lg) {
+    font-size: 2rem;
+    line-height: 38px;
+  }
 }
 
 h3,
 .h3 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 29px;
+
+  @include mq(lg) {
+    font-size: 1.5rem;
+    line-height: 29px;
+  }
 }
 
 h4,
 .h4 {
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 12px;
+  line-height: 15px;
+
+  @include mq(lg) {
+    font-size: 14px;
+    line-height: 17px;
+  }
 }
 
 p {
