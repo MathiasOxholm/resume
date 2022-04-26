@@ -5,6 +5,7 @@ import SectionHeading from "../components/SectionHeading";
 import Card from "../components/Card";
 import Project from "../components/Project";
 import { useRouter } from "next/router";
+import { NextSeo } from "next-seo";
 const oxholmAPI = process.env.NEXT_PUBLIC_API;
 
 // Get text and translation from own API
@@ -28,6 +29,11 @@ export default function Home({ ResumeText }) {
 
   return (
     <>
+      <NextSeo
+        title={t.meta.title}
+        description={t.meta.description}
+        noIndex={true}
+      />
       <div className={styles.container}>
         <main className={styles.main}>
           <Hero data={t.hero} />

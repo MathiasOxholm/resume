@@ -1,9 +1,9 @@
-import styles from "../styles/Header.module.scss";
-import Logo from "./svg/Logo";
 import { useRouter } from "next/router";
 import { gsap } from "gsap/dist/gsap";
-import Menu from "../components/Menu";
 import { useState } from "react";
+import styles from "../styles/Header.module.scss";
+import Logo from "./svg/Logo";
+import Menu from "../components/Menu";
 import clsx from "clsx";
 
 // GSAP Animation

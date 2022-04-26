@@ -1,9 +1,35 @@
+import { gsap } from "gsap/dist/gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import clsx from "clsx";
 import styles from "../styles/Card.module.scss";
 import Image from "next/image";
 
+// GSAP Animation
+if (typeof window !== "undefined") {
+  gsap.registerPlugin(ScrollTrigger);
+  const Cards = gsap.utils.toArray(".Card");
+
+  Cards.forEach((Card) => {
+    const animateIn = gsap.timeline({
+      scrollTrigger: {
+        trigger: Card,
+        start: "center bottom",
+        toggleActions: "play none none reverse",
+      },
+    });
+
+    animateIn.from(Card, {
+      y: 80,
+      opacity: 0,
+      duration: 0.75,
+      ease: "expo.Out",
+    });
+  });
+}
+
 const Card = ({ buttonText, text, text2, text3 }) => {
   return (
-    <div className={styles.Card}>
+    <div className={clsx(styles.Card, "Card")}>
       <Image src="/readr.svg" width={144} height={50} alt="Readr logo" />
       <h2>Readr</h2>
       <p>

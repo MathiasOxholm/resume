@@ -1,11 +1,11 @@
 @use "mixins" as *;
 
 .container {
-  padding-block: 5rem;
+  padding-block: 5rem 1rem;
   padding-inline: 1.5rem;
 
   @include mq(lg) {
-    padding-block: 10rem;
+    padding-block: 10rem 4rem;
     padding-inline: 4rem;
   }
 }

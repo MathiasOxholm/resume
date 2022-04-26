@@ -4,6 +4,10 @@ export default function handler(req, res) {
 
 const ResumeText = {
   da: {
+    meta: {
+      title: "Mathias Oxholm CV",
+      description: "Mit personlige CV website",
+    },
     experience: "Erfaring",
     education: "Uddanelse",
     projects: "Private projekter",
@@ -102,6 +106,10 @@ const ResumeText = {
     },
   },
   en: {
+    meta: {
+      title: "Mathias Oxholm resume",
+      description: "My personal resume website",
+    },
     experience: "Experience",
     education: "Education",
     projects: "Private projects",

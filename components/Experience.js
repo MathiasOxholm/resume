@@ -7,7 +7,6 @@ import clsx from "clsx";
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
   const Experiences = gsap.utils.toArray(".Experience");
-  const ExperienceHeadings = gsap.utils.toArray(".Experience h3");
 
   Experiences.forEach((Experience) => {
     const animateIn = gsap.timeline({
