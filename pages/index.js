@@ -5,10 +5,11 @@ import SectionHeading from "../components/SectionHeading";
 import Card from "../components/Card";
 import Project from "../components/Project";
 import { useRouter } from "next/router";
+const oxholmAPI = process.env.NEXT_PUBLIC_API;
 
 // Get text and translation from own API
 export const getStaticProps = async () => {
-  const res = await fetch("http://localhost:3000/api/content");
+  const res = await fetch(oxholmAPI);
   const data = await res.json();
 
   return {
