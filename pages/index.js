@@ -7,6 +7,8 @@ import Project from "../components/Project";
 import { useRouter } from "next/router";
 const oxholmAPI = process.env.NEXT_PUBLIC_API;
 
+// Update
+
 // Get text and translation from own API
 export const getStaticProps = async () => {
   const res = await fetch(oxholmAPI);
