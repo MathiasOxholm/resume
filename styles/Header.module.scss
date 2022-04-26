@@ -12,11 +12,16 @@
   align-items: center;
   z-index: 99;
   background-color: var(--dark-b);
+  pointer-events: none;
 
   @include mq(lg) {
     padding-inline: 4rem;
     padding-block: 2rem;
     background-color: transparent;
+  }
+
+  * {
+    pointer-events: all;
   }
 }
 
@@ -83,6 +88,21 @@
       }
       &[data-number="3"] {
         transform: scaleX(0.85) translateX(-4px);
+      }
+    }
+  }
+
+  &[data-active="true"] {
+    span {
+      &[data-number="1"] {
+        transform: scaleX(0.5) translateX(50%) translateY(2px) rotate(10deg);
+      }
+      &[data-number="2"] {
+        transform: scaleX(0) translateX(0px);
+        opacity: 0;
+      }
+      &[data-number="3"] {
+        transform: scaleX(0.5) translateX(50%) translateY(-2px) rotate(-10deg);
       }
     }
   }

@@ -15,6 +15,12 @@ const ResumeText = {
       address: "Adresse",
       about: "Kort fortalt",
     },
+    menu: {
+      experience: "Erfaring",
+      education: "Uddannelse",
+      projects: "Projekter",
+      skills: "Færdigheder",
+    },
     jobs: {
       superego: {
         title: "Frontend",
@@ -107,6 +113,12 @@ const ResumeText = {
       date: "05 / 31 / 1995",
       address: "Address",
       about: "About me",
+    },
+    menu: {
+      experience: "Experience",
+      education: "Education",
+      projects: "Projects",
+      skills: "Skills",
     },
     jobs: {
       superego: {
