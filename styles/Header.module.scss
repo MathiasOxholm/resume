@@ -32,8 +32,12 @@
 .actions {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  gap: 1.25rem;
   align-items: center;
+
+  @include mq(lg) {
+    gap: 2rem;
+  }
 
   .locale {
     margin: 0;

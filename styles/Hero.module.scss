@@ -32,6 +32,10 @@
   position: relative;
   overflow: hidden;
 
+  @include mq-max(lg) {
+    max-height: 480px;
+  }
+
   .before {
     display: flex;
     width: 100%;

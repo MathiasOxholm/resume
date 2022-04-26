@@ -1,8 +1,20 @@
+export default function handler(req, res) {
+  res.status(200).json(ResumeText);
+}
+
 const ResumeText = {
   da: {
     experience: "Erfaring",
     education: "Uddanelse",
     projects: "Private projekter",
+    hero: {
+      title: `frontend udvikler med 3+ års erfaring i special${"\u00AD"}udvikling af websites, shops og apps.`,
+      phone: "Telefon",
+      age: "Alder",
+      date: "31 / 05 / 1995",
+      address: "Adresse",
+      about: "Kort fortalt",
+    },
     jobs: {
       superego: {
         title: "Frontend",
@@ -15,7 +27,7 @@ const ResumeText = {
       },
       StepUp: {
         title: "Grafisk Ansvarlig",
-        title2: "og Webudvikler",
+        title2: "& Webudvikler",
         description: "",
         timeFrame: "",
         cases: ["circusgin.com", "rhetor.dk"],
@@ -24,7 +36,7 @@ const ResumeText = {
         title: "Webudvikler",
         title2: "- Praktikant",
         description:
-          "3 måneders virksomhedspraktik via Webudvikler uddannelsen.",
+          "3 måneders virksomhedspraktik via Webudvikler uddannelsen. Oplæring i WordPress, PHP, LESS, jQuery mm.",
         timeFrame: "",
       },
       SecPro: {
@@ -48,11 +60,11 @@ const ResumeText = {
         title2: "- Formidling og design",
       },
       MultimedieDesigner: {
-        title: "Multimediedesigner",
+        title: `Multimedie${"\u00AD"}designer`,
         title2: "m. speciale i videoproduktion",
       },
       STX: {
-        title: "STX Studentereksamen",
+        title: `STX Studenter${"\u00AD"}eksamen`,
       },
     },
     Readr: {
@@ -87,6 +99,15 @@ const ResumeText = {
     experience: "Experience",
     education: "Education",
     projects: "Private projects",
+    hero: {
+      title:
+        "Frontend developer with 3+ years of experience in creating websites, shops and apps.",
+      phone: "Phone",
+      age: "Age",
+      date: "05 / 31 / 1995",
+      address: "Address",
+      about: "About me",
+    },
     jobs: {
       superego: {
         title: "Frontend",
@@ -99,7 +120,7 @@ const ResumeText = {
       },
       StepUp: {
         title: "Graphic designer ",
-        title2: "and Web Developer",
+        title2: "& Web Developer",
         description: "",
         timeFrame: "",
         cases: ["circusgin.com", "rhetor.dk"],
@@ -168,5 +189,3 @@ const ResumeText = {
     },
   },
 };
-
-export default ResumeText;

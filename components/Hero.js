@@ -4,7 +4,6 @@ import ListItem from "./ListItem";
 import Instagram from "../components/svg/Instagram";
 import Github from "../components/svg/Github";
 import LinkedIn from "../components/svg/LinkedIn";
-import { useRouter } from "next/router";
 import { gsap } from "gsap/dist/gsap";
 
 // GSAP Animation
@@ -24,33 +23,10 @@ if (typeof window !== "undefined") {
   });
 }
 
-const HeroText = {
-  da: {
-    hero: "frontend udvikler med 5 års erfaring i specialudvikling af websites, -shops og -apps.",
-    phone: "Telefon",
-    age: "Alder",
-    date: "31 / 05 / 1995",
-    address: "Adresse",
-    about: "Kort fortalt",
-  },
-  en: {
-    hero: "Frontend developer with 5 years of experience in creating websites, shops and apps.",
-    phone: "Phone",
-    age: "Age",
-    date: "05 / 31 / 1995",
-    address: "Address",
-    about: "About me",
-  },
-};
-
-const Hero = () => {
-  let router = useRouter();
-  const { locale } = router;
-  const t = HeroText[locale];
-
+const Hero = ({ data }) => {
   return (
     <div id="Hero" className={styles.Hero}>
-      <h1 className={styles.title}>{t.hero}</h1>
+      <h1 className={styles.title}>{data.title}</h1>
 
       <div className={styles.row}>
         <div id="HeroImage" className={styles.featuredImage}>
@@ -65,7 +41,7 @@ const Hero = () => {
         </div>
         <div className={styles.about}>
           <div className={styles.inner}>
-            <h2 className="h3">{t.about}</h2>
+            <h2 className="h3">{data.about}</h2>
             <p className={styles.description}>
               Færdiguddannet Professionsbachelor i International Webudvikling
               (Formidling og design) på IBA Erhvervsakademi Kolding. Jeg
@@ -78,9 +54,9 @@ const Hero = () => {
           </div>
           <div className={styles.info}>
             <h2 className="h3">Info</h2>
-            <ListItem title={t.age} body={t.date} />
+            <ListItem title={data.age} body={data.date} />
             <ListItem
-              title={t.phone}
+              title={data.phone}
               body="+45 20 31 60 93"
               href="tel:+4520316993"
             />
@@ -89,7 +65,7 @@ const Hero = () => {
               body="hello@mathiasoxholm.dk"
               href="mailto:hello@mathiasoxholm.dk"
             />
-            <ListItem title={t.address} body="6000 Kolding" />
+            <ListItem title={data.address} body="6000 Kolding" />
             <ListItem title="Connect">
               <Github />
               <LinkedIn />
