@@ -101,7 +101,7 @@ const Menu = ({ handleHideMenu }) => {
               <ul>
                 <li>6000 Kolding</li>
                 <li>
-                  <a href="mailto:hello@oxholm.dev">hello@oxholm.dev</a>
+                  <a href="hello@mathiasoxholm.dk">hello@mathiasoxholm.dk</a>
                 </li>
                 <li>
                   <a href="tel:+4520316993">+45 20 31 60 93</a>
