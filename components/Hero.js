@@ -8,25 +8,63 @@ import { gsap } from "gsap/dist/gsap";
 
 // GSAP Animation
 if (typeof window !== "undefined") {
-  gsap.from("#before", {
-    scaleY: 0,
-    duration: 1,
-    ease: "expo.Out",
-    delay: 0.2,
-  });
+  const heroTL = gsap.timeline();
 
-  gsap.from("#HeroImage img", {
-    y: "-100%",
-    duration: 1,
-    ease: "expo.Out",
-    delay: 0.5,
-  });
+  heroTL
+    .from("#before", {
+      scaleY: 0,
+      scaleX: 1,
+      duration: 1,
+      ease: "expo.Out",
+      delay: 0.2,
+    })
+    .from(
+      "#HeroImage img",
+      {
+        y: "-100%",
+        duration: 1,
+        ease: "expo.Out",
+      },
+      "-=0.7"
+    )
+    .from(
+      "#Title",
+      {
+        y: "50%",
+        opacity: 0,
+        duration: 1,
+        ease: "expo.Out",
+      },
+      "-=0.7"
+    )
+    .from(
+      "#Inner",
+      {
+        y: "40px",
+        opacity: 0,
+        duration: 1,
+        ease: "expo.Out",
+      },
+      "-=0.7"
+    )
+    .from(
+      "#Info",
+      {
+        y: "40px",
+        opacity: 0,
+        duration: 1,
+        ease: "expo.Out",
+      },
+      "-=0.7"
+    );
 }
 
 const Hero = ({ data }) => {
   return (
     <div id="Hero" className={styles.Hero}>
-      <h1 className={styles.title}>{data.title}</h1>
+      <h1 id="Title" className={styles.title}>
+        {data.title}
+      </h1>
 
       <div className={styles.row}>
         <div id="HeroImage" className={styles.featuredImage}>
@@ -40,7 +78,7 @@ const Hero = ({ data }) => {
           />
         </div>
         <div className={styles.about}>
-          <div className={styles.inner}>
+          <div id="Inner" className={styles.inner}>
             <h2 className="h3">{data.about}</h2>
             <p className={styles.description}>
               Færdiguddannet Professionsbachelor i International Webudvikling
@@ -52,7 +90,7 @@ const Hero = ({ data }) => {
               <b>Jeg går aldrig tilbage og søger derfor nye udfordringer.</b>
             </p>
           </div>
-          <div className={styles.info}>
+          <div id="Info" className={styles.info}>
             <h2 className="h3">Info</h2>
             <ListItem title={data.age} body={data.date} />
             <ListItem

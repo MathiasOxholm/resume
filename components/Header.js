@@ -12,6 +12,7 @@ if (typeof window !== "undefined") {
     y: -100,
     duration: 0.75,
     ease: "power3.Out",
+    delay: 1.4,
   });
 }
 
