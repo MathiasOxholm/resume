@@ -3,7 +3,6 @@ import Header from "../components/Header";
 import Head from "next/head";
 import Footer from "../components/Footer";
 import { DefaultSeo } from "next-seo";
-import BuiltWith from "../components/svg/BuiltWith";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -28,7 +27,6 @@ function MyApp({ Component, pageProps }) {
       />
       <Header />
       <Component {...pageProps} />
-      <BuiltWith />
       <Footer />
     </>
   );
