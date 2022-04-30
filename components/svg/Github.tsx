@@ -1,4 +1,4 @@
-const Github = () => {
+const Github: React.FC = () => {
   return (
     <a
       href="https://github.com/MathiasOxholm"

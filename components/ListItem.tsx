@@ -1,6 +1,13 @@
 import styles from "../styles/Listitem.module.scss";
 
-const ListItem = ({ title, body, href, children }) => {
+interface Props {
+  title: string;
+  body?: string;
+  href?: string;
+  children?: React.ReactNode;
+};
+
+const ListItem: React.FC<Props> = ({ title, body, href, children }) => {
   return (
     <div className={styles.ListItem}>
       <h3 className="h4">{title}</h3>

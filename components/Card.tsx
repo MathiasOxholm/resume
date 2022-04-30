@@ -7,7 +7,7 @@ import Image from "next/image";
 // GSAP Animation
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
-  const Cards = gsap.utils.toArray(".Card");
+  const Cards = gsap.utils.toArray<HTMLElement>(".Card");
 
   Cards.forEach((Card) => {
     const animateIn = gsap.timeline({
@@ -27,7 +27,14 @@ if (typeof window !== "undefined") {
   });
 }
 
-const Card = ({ buttonText, text, text2, text3 }) => {
+interface Props {
+  buttonText: string;
+  text: string;
+  text2?: string;
+  text3?: string;
+}
+
+const Card: React.FC<Props> = ({ buttonText, text, text2, text3 }) => {
   return (
     <div className={clsx(styles.Card, "Card")}>
       <Image src="/readr.svg" width={144} height={50} alt="Readr logo" />

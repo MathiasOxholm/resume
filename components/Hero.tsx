@@ -59,13 +59,28 @@ if (typeof window !== "undefined") {
     );
 }
 
-const Hero = ({ data }) => {
+interface dataObject {
+  title: string;
+  about: string;
+  age: string;
+  date: string;
+  phone: string;
+  address: string;
+  location: string;
+  description: string;
+  description2: string;
+}
+
+interface Props {
+  data: dataObject;
+}
+
+const Hero: React.FC<Props> = ({ data }) => {
   return (
     <div id="Hero" className={styles.Hero}>
       <h1 id="Title" className={styles.title}>
         {data.title}
       </h1>
-
       <div className={styles.row}>
         <div id="HeroImage" className={styles.featuredImage}>
           <div id="before" className={styles.before}></div>
@@ -81,21 +96,10 @@ const Hero = ({ data }) => {
           <div id="Inner" className={styles.inner}>
             <h2 className="h3">{data.about}</h2>
             <p className={styles.description}>
-              Uddannet webudvikler med speciale i Wordpress og UI / UX. Jeg
-              arbejder pt som Frontend udvikler hos Superego i Horsens, hvor jeg
-              både sidder med specialudvikling af hjemmesider samt kundekontakt
-              og fungerer som sparringspartner ift. designprocesser.
+              {data.description}
               <br />
               <br />
-              Jeg bevæger mig altid fremad, og søger derfor nye udfordringer, da
-              jeg personligt er midt i en overgangsperiode fra PHP til JS. Mere
-              specifikt udforsker jeg React / Next.js, og selvom jeg ikke har
-              opgivet mine spidskompetencer, finder jeg det lige nu betydeligt
-              sjovere end hverdagens opgaver inden for PHP og jQuery. Jeg glæder
-              mig til at finde en arbejdsplads, hvor jeg kan udvikle mig
-              yderligere og sparre med mine kollegaer om fede projekter. Jeg er
-              bosat i Kolding men har bil og er desuden villig til at flytte for
-              det rette job.
+              {data.description2}
             </p>
           </div>
           <div id="Info" className={styles.info}>

@@ -1,4 +1,4 @@
-const LinkedIn = () => {
+const LinkedIn: React.FC = () => {
   return (
     <a
       href="https://www.linkedin.com/in/mathiasoxholm/"

@@ -1,10 +1,11 @@
+import type { AppProps } from "next/app";
 import "../styles/globals.scss";
 import Header from "../components/Header";
 import Head from "next/head";
 import Footer from "../components/Footer";
 import { DefaultSeo } from "next-seo";
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>

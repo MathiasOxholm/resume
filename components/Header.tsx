@@ -16,11 +16,11 @@ if (typeof window !== "undefined") {
   });
 }
 
-const Header = () => {
+const Header: React.FC = () => {
   const [showMenu, setShowMenu] = useState(false);
   let router = useRouter();
   const { locale } = router;
-  const localeText = locale === "da" ? "en" : "da";
+  const localeText: string = locale === "da" ? "en" : "da";
 
   // Change language
   const changeLanguage = (e) => {
@@ -29,15 +29,15 @@ const Header = () => {
   };
 
   // Beam me up Scotty
-  const scrollToTop = () => {
+  const scrollToTop: () => void = () => {
     window.scrollTo(0, 0);
   };
 
-  const handleShowMenu = () => {
+  const handleShowMenu: () => void = () => {
     setShowMenu(!showMenu);
   };
 
-  const handleHideMenu = () => {
+  const handleHideMenu: () => void = () => {
     setTimeout(() => {
       setShowMenu(false);
     }, 2000);

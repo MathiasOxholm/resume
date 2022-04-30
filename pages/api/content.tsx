@@ -1,4 +1,11 @@
-export default function handler(req, res) {
+import type { NextApiRequest, NextApiResponse } from "next";
+
+interface Data {
+  da: object;
+  en: object;
+}
+
+export default function handler(req: NextApiRequest, res: NextApiResponse<Data>) {
   res.status(200).json(ResumeText);
 }
 

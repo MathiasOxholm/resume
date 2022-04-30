@@ -6,7 +6,7 @@ import clsx from "clsx";
 // GSAP Animation
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
-  const Projects = gsap.utils.toArray(".Project");
+  const Projects = gsap.utils.toArray<HTMLElement>(".Project");
 
   Projects.forEach((Project) => {
     const animateIn = gsap.timeline({
@@ -26,7 +26,13 @@ if (typeof window !== "undefined") {
   });
 }
 
-const Project = ({ title, body, href }) => {
+interface Props {
+  title: string;
+  body: string;
+  href: string;
+};
+
+const Project: React.FC<Props> = ({ title, body, href }) => {
   return (
     <a
       href={href}

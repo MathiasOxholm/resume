@@ -1,4 +1,4 @@
-const Instagram = () => {
+const Instagram: React.FC = () => {
   return (
     <a
       href="https://www.instagram.com/oxholm.design/"

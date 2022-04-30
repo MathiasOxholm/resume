@@ -6,7 +6,7 @@ import clsx from "clsx";
 // GSAP Animation
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
-  const Headings = gsap.utils.toArray(".Heading");
+  const Headings = gsap.utils.toArray<HTMLElement>(".Heading");
 
   Headings.forEach((Heading) => {
     const animateIn = gsap.timeline({
@@ -26,7 +26,11 @@ if (typeof window !== "undefined") {
   });
 }
 
-const SectionHeading = ({ title }) => {
+interface Props {
+  title: string;
+};
+
+const SectionHeading: React.FC<Props> = ({ title }) => {
   return (
     <div className={clsx(styles.SectionHeading, "Heading")}>
       <h2 className="h3">{title}</h2>

@@ -6,7 +6,7 @@ import clsx from "clsx";
 // GSAP Animation
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
-  const Experiences = gsap.utils.toArray(".Experience");
+  const Experiences = gsap.utils.toArray<HTMLElement>(".Experience");
 
   Experiences.forEach((Experience) => {
     const animateIn = gsap.timeline({
@@ -26,7 +26,16 @@ if (typeof window !== "undefined") {
   });
 }
 
-const Experience = ({
+interface Props {
+  title: string;
+  title2?: string;
+  location: string;
+  timeFrame: string;
+  description?: string;
+  cases?: [];
+}
+
+const Experience: React.FC<Props> = ({
   title,
   title2,
   location,

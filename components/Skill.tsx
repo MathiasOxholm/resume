@@ -6,7 +6,7 @@ import clsx from "clsx";
 // GSAP Animation
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
-  const Skills = gsap.utils.toArray(".Skill");
+  const Skills = gsap.utils.toArray<HTMLElement>(".Skill");
 
   Skills.forEach((Skill) => {
     const animateIn = gsap.timeline({
@@ -26,7 +26,12 @@ if (typeof window !== "undefined") {
   });
 }
 
-const Skill = ({ title, content }) => {
+interface Props {
+  title: string;
+  content: [];
+};
+
+const Skill: React.FC<Props> = ({ title, content }) => {
   return (
     <div className={clsx(styles.Skill, "Skill")}>
       <h4>{title}</h4>

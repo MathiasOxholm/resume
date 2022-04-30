@@ -7,10 +7,11 @@ import Project from "../components/Project";
 import Skill from "../components/Skill";
 import { useRouter } from "next/router";
 import { NextSeo } from "next-seo";
+import { GetStaticProps } from "next";
 const oxholmAPI = process.env.NEXT_PUBLIC_API;
 
 // Get text and translation from own API
-export const getStaticProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
   const res = await fetch(oxholmAPI);
   const data = await res.json();
 
@@ -19,7 +20,11 @@ export const getStaticProps = async () => {
   };
 };
 
-export default function Home({ ResumeText }) {
+interface Props {
+  ResumeText: object;
+}
+
+const Home: React.FC<Props> = ({ ResumeText }) => {
   let router = useRouter();
   const { locale } = router;
   const t = ResumeText[locale];
@@ -29,14 +34,12 @@ export default function Home({ ResumeText }) {
   const privateProjects = t.privateProjects;
   const skills = t.skills;
 
-  console.log(jobs);
-
   return (
     <>
       <NextSeo
         title={t.meta.title}
         description={t.meta.description}
-        noIndex={true}
+        noindex={true}
       />
       <div className={styles.container}>
         <main className={styles.main}>
@@ -115,3 +118,5 @@ export default function Home({ ResumeText }) {
     </>
   );
 }
+
+export default Home;

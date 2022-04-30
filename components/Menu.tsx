@@ -2,11 +2,13 @@ import styles from "../styles/Menu.module.scss";
 import { gsap } from "gsap/dist/gsap";
 import { useEffect } from "react";
 
-const Menu = ({ handleHideMenu }) => {
+interface Props {
+  handleHideMenu: () => void;
+}
+
+const Menu: React.FC<Props> = ({ handleHideMenu }) => {
   // GSAP Animation
-  if (typeof window !== "undefined") {
-    const tl = gsap.timeline();
-  }
+  const tl = gsap.timeline();
 
   const handleCloseMenu = () => {
     tl.reverse();
@@ -53,7 +55,7 @@ const Menu = ({ handleHideMenu }) => {
         "-=0.25"
       );
     }
-  }, []);
+  }, [tl]);
 
   return (
     <>
