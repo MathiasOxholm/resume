@@ -38,11 +38,12 @@ export default function Home({ ResumeText }) {
       />
       <div className={styles.container}>
         <main className={styles.main}>
+          {/* Hero */}
           <Hero data={t.hero} />
 
+          {/* Experiences */}
           <div className={styles.ExperienceList}>
             <SectionHeading title={t.experience} />
-
             <Experience
               title={jobs.superego.title}
               title2={jobs.superego.title2}
@@ -55,8 +56,8 @@ export default function Home({ ResumeText }) {
               title={jobs.StepUp.title}
               title2={jobs.StepUp.title2}
               location="StepUp Media ApS - Kolding"
-              timeFrame="Feb 2019 - Mar 2021"
-              description="Udover min praktik, var jeg fuldtidsansat i ca. 2 år og siden fastansættelsen fik jeg lavet over 70 unikke website og webshop designs i Adobe XD. Derudover har jeg selv kodet 24 af siderne op i WordPress."
+              timeFrame={jobs.StepUp.timeFrame}
+              description={jobs.StepUp.description}
               cases={jobs.StepUp.cases}
             />
             <Experience
@@ -82,6 +83,7 @@ export default function Home({ ResumeText }) {
             />
           </div>
 
+          {/* Education */}
           <div className={styles.ExperienceList}>
             <SectionHeading title={t.education} />
             <Experience
@@ -103,6 +105,7 @@ export default function Home({ ResumeText }) {
             />
           </div>
 
+          {/* Personal projects */}
           <div>
             <SectionHeading title={t.projects} />
             <div className={styles.row}>
@@ -136,6 +139,7 @@ export default function Home({ ResumeText }) {
             </div>
           </div>
 
+          {/* Skills */}
           <div>
             <SectionHeading title={skills.title} />
             <div className={styles.grid}>

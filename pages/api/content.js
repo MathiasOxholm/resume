@@ -38,8 +38,9 @@ const ResumeText = {
       StepUp: {
         title: "Grafisk Ansvarlig",
         title2: "& Webudvikler",
-        description: "",
-        timeFrame: "",
+        description:
+          "Udover min praktik, var jeg fuldtidsansat i ca. 2 år og siden fastansættelsen fik jeg lavet over 70 unikke website og webshop designs i Adobe XD. Derudover har jeg selv kodet 24 af siderne op i WordPress.",
+        timeFrame: "Feb 2019 - Mar 2021",
         cases: ["circusgin.com", "rhetor.dk"],
       },
       StepUpIntern: {
@@ -172,8 +173,9 @@ const ResumeText = {
       StepUp: {
         title: "Graphic designer ",
         title2: "& Web Developer",
-        description: "",
-        timeFrame: "",
+        description:
+          "Udover min praktik, var jeg fuldtidsansat i ca. 2 år og siden fastansættelsen fik jeg lavet over 70 unikke website og webshop designs i Adobe XD. Derudover har jeg selv kodet 24 af siderne op i WordPress.",
+        timeFrame: "Feb 2019 - Mar 2021",
         cases: ["circusgin.com", "rhetor.dk"],
       },
       StepUpIntern: {

@@ -13,7 +13,7 @@ if (typeof window !== "undefined") {
     const animateIn = gsap.timeline({
       scrollTrigger: {
         trigger: Card,
-        start: "center bottom",
+        start: "top bottom",
         toggleActions: "play none none reverse",
       },
     });

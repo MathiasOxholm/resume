@@ -12,7 +12,7 @@ if (typeof window !== "undefined") {
     const animateIn = gsap.timeline({
       scrollTrigger: {
         trigger: Project,
-        start: "center bottom",
+        start: "top bottom",
         toggleActions: "play none none reverse",
       },
     });

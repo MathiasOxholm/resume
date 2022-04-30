@@ -30,7 +30,13 @@
   transition: var(--transition);
 
   &:hover {
+    opacity: 0.75;
+  }
+
+  &:active,
+  &:focus-within {
     opacity: 0.5;
+    transform: translateY(4px);
   }
 }
 
@@ -53,6 +59,17 @@
     font-size: 12px;
     cursor: pointer;
     user-select: none;
+    transition: var(--transition);
+
+    &:hover {
+      opacity: 0.75;
+    }
+
+    &:active,
+    &:focus-within {
+      opacity: 0.5;
+      transform: translateY(4px);
+    }
   }
 }
 
