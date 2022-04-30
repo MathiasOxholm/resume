@@ -245,7 +245,7 @@ const ResumeText = {
         content: ["HTML5", "CSS3 / SCSS / LESS", "PHP", "JS / jQuery"],
       },
       development: {
-        title: "Languages",
+        title: "Development",
         content: [
           "WordPress / ACF",
           "React / Next.js",

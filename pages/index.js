@@ -139,32 +139,22 @@ export default function Home({ ResumeText }) {
           <div>
             <SectionHeading title={skills.title} />
             <div className={styles.grid}>
-              <Skill title="Languages">
-                <li>HTML5</li>
-                <li>CSS3 / SCSS / LESS</li>
-                <li>PHP</li>
-                <li>JS / jQuery</li>
-              </Skill>
-              <Skill title="Development">
-                <li>WordPress / ACF</li>
-                <li>React / Next.js</li>
-                <li>ReactNative / Expo</li>
-                <li>NPM / Yarn</li>
-                <li>Bootstrap 5</li>
-                <li>GSAP</li>
-              </Skill>
-              <Skill title="Design">
-                <li>Figma</li>
-                <li>Adobe XD</li>
-                <li>Adobe Illustrator</li>
-                <li>Adobe Photoshop</li>
-              </Skill>
-              <Skill title="Personally">
-                <li>Ydmyg og nede på jorden</li>
-                <li>Tech, gaming og Web 3 nørd</li>
-                <li>Altid frisk på en bajer</li>
-                <li>Guitarist og musik nørd</li>
-              </Skill>
+              <Skill
+                title={skills.languages.title}
+                content={skills.languages.content}
+              />
+              <Skill
+                title={skills.development.title}
+                content={skills.development.content}
+              />
+              <Skill
+                title={skills.design.title}
+                content={skills.design.content}
+              />
+              <Skill
+                title={skills.personally.title}
+                content={skills.personally.content}
+              />
             </div>
           </div>
         </main>
