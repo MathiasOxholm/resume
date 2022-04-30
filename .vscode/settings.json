@@ -1,7 +1,0 @@
-{
-    "files.exclude": {
-        "public/locales/da": true,
-        "public/locales": true
-    },
-    "workspace.isHidden": false
-}

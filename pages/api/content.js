@@ -18,6 +18,10 @@ const ResumeText = {
       date: "31 / 05 / 1995",
       address: "Adresse",
       about: "Kort fortalt",
+      description:
+        "Uddannet webudvikler med speciale i Wordpress og UI / UX. Jeg arbejder pt som Frontend udvikler hos Superego i Horsens, hvor jeg både sidder med specialudvikling af hjemmesider samt kundekontakt og fungerer som sparringspartner ift. designprocesser.",
+      description2:
+        "Jeg bevæger mig altid fremad, og søger derfor nye udfordringer, da jeg personligt er midt i en overgangsperiode fra PHP til JS. Mere specifikt udforsker jeg React / Next.js, og selvom jeg ikke har opgivet mine spidskompetencer, finder jeg det lige nu betydeligt sjovere end hverdagens opgaver inden for PHP og jQuery. Jeg glæder mig til at finde en arbejdsplads, hvor jeg kan udvikle mig yderligere og sparre med mine kollegaer om fede projekter. Jeg er bosat i Kolding men har bil og er desuden villig til at flytte for det rette job.",
     },
     menu: {
       experience: "Erfaring",
@@ -116,10 +120,11 @@ const ResumeText = {
         content: [
           "WordPress / ACF",
           "React / Next.js",
-          "ReactNative / Expo",
+          "React Native / Expo",
           "NPM / Yarn",
           "Bootstrap 5",
           "GSAP",
+          "Firebase",
         ],
       },
       design: {
@@ -251,10 +256,11 @@ const ResumeText = {
         content: [
           "WordPress / ACF",
           "React / Next.js",
-          "ReactNative / Expo",
+          "React Native / Expo",
           "NPM / Yarn",
           "Bootstrap 5",
           "GSAP",
+          "Firebase",
         ],
       },
       design: {

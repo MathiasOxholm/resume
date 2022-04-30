@@ -4,7 +4,14 @@ const Footer = () => {
   return (
     <footer className={styles.Footer}>
       <p className={styles.credit}>Made with ❤️ by oxholm.dev</p>
-      <p className={styles.credit}>Get the code from GitHub</p>
+      <a
+        href="https://github.com/MathiasOxholm/resume"
+        target="_blank"
+        className={styles.credit}
+        rel="noreferrer"
+      >
+        Get the code from GitHub
+      </a>
     </footer>
   );
 };

@@ -81,13 +81,21 @@ const Hero = ({ data }) => {
           <div id="Inner" className={styles.inner}>
             <h2 className="h3">{data.about}</h2>
             <p className={styles.description}>
-              Færdiguddannet Professionsbachelor i International Webudvikling
-              (Formidling og design) på IBA Erhvervsakademi Kolding. Jeg
-              arbejder pt som Frontend udvikler hos Superego i Horsens. <br />
-              <br /> Midt i en overgangsperiode mellem PHP til JS. Specifikt
-              udforsker jeg React / Next.js og finder det betydelig federe end
-              WordPress, PHP og jQuery. Med andre ord:
-              <b>Jeg går aldrig tilbage og søger derfor nye udfordringer.</b>
+              Uddannet webudvikler med speciale i Wordpress og UI / UX. Jeg
+              arbejder pt som Frontend udvikler hos Superego i Horsens, hvor jeg
+              både sidder med specialudvikling af hjemmesider samt kundekontakt
+              og fungerer som sparringspartner ift. designprocesser.
+              <br />
+              <br />
+              Jeg bevæger mig altid fremad, og søger derfor nye udfordringer, da
+              jeg personligt er midt i en overgangsperiode fra PHP til JS. Mere
+              specifikt udforsker jeg React / Next.js, og selvom jeg ikke har
+              opgivet mine spidskompetencer, finder jeg det lige nu betydeligt
+              sjovere end hverdagens opgaver inden for PHP og jQuery. Jeg glæder
+              mig til at finde en arbejdsplads, hvor jeg kan udvikle mig
+              yderligere og sparre med mine kollegaer om fede projekter. Jeg er
+              bosat i Kolding men har bil og er desuden villig til at flytte for
+              det rette job.
             </p>
           </div>
           <div id="Info" className={styles.info}>
