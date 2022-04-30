@@ -55,7 +55,7 @@ export default function Home({ ResumeText }) {
             <Experience
               title={jobs.StepUp.title}
               title2={jobs.StepUp.title2}
-              location="StepUp Media ApS - Kolding"
+              location={jobs.StepUp.location}
               timeFrame={jobs.StepUp.timeFrame}
               description={jobs.StepUp.description}
               cases={jobs.StepUp.cases}
@@ -63,21 +63,21 @@ export default function Home({ ResumeText }) {
             <Experience
               title={jobs.StepUpIntern.title}
               title2={jobs.StepUpIntern.title2}
-              location="StepUp Media ApS - Kolding"
+              location={jobs.StepUpIntern.location}
               timeFrame="Aug 2018 - Okt 2018"
               description={jobs.StepUpIntern.description}
             />
             <Experience
               title={jobs.SecPro.title}
               title2={jobs.SecPro.title2}
-              location="SecPro Sikring A/S - Kolding"
+              location={jobs.SecPro.location}
               timeFrame="Aug 2017 - Nov 2017"
               description={jobs.SecPro.description}
             />
             <Experience
               title={jobs.GejstGruppen.title}
               title2={jobs.GejstGruppen.title2}
-              location="GejstGruppen ApS - Kolding"
+              location={jobs.GejstGruppen.location}
               timeFrame="Jan 2017 - Apr 2017"
               description={jobs.GejstGruppen.description}
             />
@@ -89,18 +89,18 @@ export default function Home({ ResumeText }) {
             <Experience
               title={educations.Webdeveloper.title}
               title2={educations.Webdeveloper.title2}
-              location="IBA Erhvervsakademi Kolding"
+              location={educations.Webdeveloper.location}
               timeFrame="Aug 2017 - Okt 2019"
             />
             <Experience
               title={educations.MultimedieDesigner.title}
               title2={educations.MultimedieDesigner.title2}
-              location="IBA Erhvervsakademi Kolding"
+              location={educations.MultimedieDesigner.location}
               timeFrame="Aug 2015 - Nov 2017"
             />
             <Experience
               title={educations.STX.title}
-              location="Munkensdam gymnasium - Kolding"
+              location={educations.STX.location}
               timeFrame="Aug 2011 - Jun 2014"
             />
           </div>

@@ -55,7 +55,7 @@ const ResumeText = {
         location: "StepUp Media ApS - Kolding",
         description:
           "3 måneders virksomhedspraktik via Webudvikler uddannelsen. Oplæring i WordPress, PHP, LESS, jQuery mm.",
-        timeFrame: "",
+        timeFrame: "Aug 2018 - Okt 2018",
       },
       SecPro: {
         title: "Webudvikler",
@@ -63,7 +63,7 @@ const ResumeText = {
         location: "SecPro Sikring A/S - Kolding",
         description:
           "Projektbaseret studiejob under Multimediedesigneren. WordPress + WooCommerce shop management.",
-        timeFrame: "",
+        timeFrame: "Aug 2017 - Nov 2017",
       },
       GejstGruppen: {
         title: "Webudvikler",
@@ -71,7 +71,7 @@ const ResumeText = {
         location: "GejstGruppen ApS - Kolding",
         description:
           "3 måneders virksomhedspraktik via Multimediedesigner uddannelsen. Udarbejdelse af skræddersyet spørgeskema i PHP.",
-        timeFrame: "",
+        timeFrame: "Jan 2017 - Apr 2017",
       },
     },
     educations: {
@@ -79,15 +79,18 @@ const ResumeText = {
         title: "International Webudvikling",
         title2: "- Formidling og design",
         location: "IBA Erhvervsakademi Kolding",
+        timeFrame: "Aug 2017 - Okt 2019",
       },
       MultimedieDesigner: {
         title: `Multimedie${"\u00AD"}designer`,
         title2: "m. speciale i videoproduktion",
         location: "IBA Erhvervsakademi Kolding",
+        timeFrame: "Aug 2015 - Nov 2017",
       },
       STX: {
         title: `STX Studenter${"\u00AD"}eksamen`,
         location: "Munkensdam gymnasium - Kolding",
+        timeFrame: "Aug 2011 - Jun 2014",
       },
     },
     Readr: {
@@ -150,6 +153,9 @@ const ResumeText = {
         ],
       },
     },
+    footer: {
+      link: "Se koden på Github",
+    },
   },
   en: {
     meta: {
@@ -168,6 +174,10 @@ const ResumeText = {
       address: "Address",
       location: "Kolding, Denmark",
       about: "About me",
+      description:
+        "Uddannet webudvikler med speciale i Wordpress og UI / UX. Jeg arbejder pt som Frontend udvikler hos Superego i Horsens, hvor jeg både sidder med specialudvikling af hjemmesider samt kundekontakt og fungerer som sparringspartner ift. designprocesser.",
+      description2:
+        "Jeg bevæger mig altid fremad, og søger derfor nye udfordringer, da jeg personligt er midt i en overgangsperiode fra PHP til JS. Mere specifikt udforsker jeg React / Next.js, og selvom jeg ikke har opgivet mine spidskompetencer, finder jeg det lige nu betydeligt sjovere end hverdagens opgaver inden for PHP og jQuery. Jeg glæder mig til at finde en arbejdsplads, hvor jeg kan udvikle mig yderligere og sparre med mine kollegaer om fede projekter. Jeg er bosat i Kolding men har bil og er desuden villig til at flytte for det rette job.",
     },
     menu: {
       experience: "Experience",
@@ -200,7 +210,7 @@ const ResumeText = {
         location: "StepUp Media ApS - Kolding, Denmark",
         description:
           "3 months company internship via the Web Developer education.",
-        timeFrame: "",
+        timeFrame: "Aug 2018 - Oct 2018",
       },
       SecPro: {
         title: "Web Developer",
@@ -208,7 +218,7 @@ const ResumeText = {
         location: "SecPro Sikring A/S - Kolding, Denmark",
         description:
           "Project-based study job under the Multimedia Designer. WordPress + WooCommerce shop management.",
-        timeFrame: "",
+        timeFrame: "Aug 2017 - Nov 2017",
       },
       GejstGruppen: {
         title: "Web Developer",
@@ -216,7 +226,7 @@ const ResumeText = {
         location: "GejstGruppen ApS - Kolding, Denmark",
         description:
           "3 months company internship via the Multimedia Designer education. Development of custom questionnaire in PHP.",
-        timeFrame: "",
+        timeFrame: "Jan 2017 - Apr 2017",
       },
     },
     educations: {
@@ -224,15 +234,18 @@ const ResumeText = {
         title: "International Web Development",
         title2: "- Communication and design",
         location: "International Business Academy - Kolding, Denmark",
+        timeFrame: "Aug 2017 - Oct 2019",
       },
       MultimedieDesigner: {
         title: "Multimedia designer",
         title2: "Majoring in video production",
         location: "International Business Academy - Kolding, Denmark",
+        timeFrame: "Aug 2015 - Nov 2017",
       },
       STX: {
         title: "STX Student Exam",
         location: "Munkensdam gymnasium - Kolding, Denmark",
+        timeFrame: "Aug 2011 - Jun 2014",
       },
     },
     Readr: {
@@ -294,6 +307,9 @@ const ResumeText = {
           "Guitarist and music nerd",
         ],
       },
+    },
+    footer: {
+      link: "Get the code from Github",
     },
   },
 };

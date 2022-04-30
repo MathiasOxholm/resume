@@ -111,7 +111,7 @@ const Hero = ({ data }) => {
               body="hello@mathiasoxholm.dk"
               href="mailto:hello@mathiasoxholm.dk"
             />
-            <ListItem title={data.address} body="6000 Kolding" />
+            <ListItem title={data.address} body={data.location} />
             <ListItem title="Connect">
               <Github />
               <LinkedIn />
