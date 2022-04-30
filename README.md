@@ -18,3 +18,8 @@ Mathias Oxholm
 ## Live Site
 
 [Check out my resume](https://cv.oxholm.dev)
+
+## Lighthouse
+The website is a staticpage and should be lightning fast.
+
+![lighthouse](https://user-images.githubusercontent.com/17880711/166118601-ae6ca476-754b-47bd-aed2-4460860eba81.png)
