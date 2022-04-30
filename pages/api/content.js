@@ -122,7 +122,6 @@ const ResumeText = {
       },
     },
     skills: {
-      title: "Færdigheder",
       languages: {
         title: "Sprog",
         content: ["HTML5", "CSS3 / SCSS / LESS", "PHP", "JS / jQuery"],
@@ -278,7 +277,6 @@ const ResumeText = {
       },
     },
     skills: {
-      title: "Skills",
       languages: {
         title: "Languages",
         content: ["HTML5", "CSS3 / SCSS / LESS", "PHP", "JS / jQuery"],

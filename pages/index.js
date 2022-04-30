@@ -99,24 +99,15 @@ export default function Home({ ResumeText }) {
 
           {/* Skills */}
           <div>
-            <SectionHeading title={skills.title} />
+            <SectionHeading title={t.skillHeading} />
             <div className={styles.grid}>
-              <Skill
-                title={skills.languages.title}
-                content={skills.languages.content}
-              />
-              <Skill
-                title={skills.development.title}
-                content={skills.development.content}
-              />
-              <Skill
-                title={skills.design.title}
-                content={skills.design.content}
-              />
-              <Skill
-                title={skills.personally.title}
-                content={skills.personally.content}
-              />
+              {Object.keys(skills).map((key, index) => (
+                <Skill
+                  key={index}
+                  title={skills[key].title}
+                  content={skills[key].content}
+                />
+              ))}
             </div>
           </div>
         </main>
