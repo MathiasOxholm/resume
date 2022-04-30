@@ -29,12 +29,12 @@ if (typeof window !== "undefined") {
 interface Props {
   title: string;
   content: [];
-};
+}
 
 const Skill: React.FC<Props> = ({ title, content }) => {
   return (
     <div className={clsx(styles.Skill, "Skill")}>
-      <h4>{title}</h4>
+      <h3 className="h4">{title}</h3>
       <ul>
         {content &&
           content.map((item) => {

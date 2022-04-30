@@ -5,7 +5,10 @@ interface Data {
   en: object;
 }
 
-export default function handler(req: NextApiRequest, res: NextApiResponse<Data>) {
+export default function handler(
+  req: NextApiRequest,
+  res: NextApiResponse<Data>
+) {
   res.status(200).json(ResumeText);
 }
 
@@ -310,7 +313,7 @@ const ResumeText = {
         content: [
           "Humble and down to earth",
           "Tech, gaming and Web3 nerd",
-          "Always down for a beer",
+          "Always up for a beer",
           "Guitarist and music nerd",
         ],
       },

@@ -39,7 +39,7 @@ const Home: React.FC<Props> = ({ ResumeText }) => {
       <NextSeo
         title={t.meta.title}
         description={t.meta.description}
-        noindex={true}
+        noindex={false}
       />
       <div className={styles.container}>
         <main className={styles.main}>
