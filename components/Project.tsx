@@ -30,19 +30,28 @@ interface Props {
   title: string;
   body: string;
   href: string;
-};
+}
 
 const Project: React.FC<Props> = ({ title, body, href }) => {
   return (
-    <a
-      href={href}
-      className={clsx(styles.Project, "Project")}
-      target="_blank"
-      rel="noreferrer"
-    >
-      <h3 className="h4">{title}</h3>
-      <p>{body}</p>
-    </a>
+    <>
+      {href ? (
+        <a
+          href={href}
+          className={clsx(styles.Project, "Project")}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <h3 className="h4">{title}</h3>
+          <p>{body}</p>
+        </a>
+      ) : (
+        <div className={clsx(styles.Project, "Project")}>
+          <h3 className="h4">{title}</h3>
+          <p>{body}</p>
+        </div>
+      )}
+    </>
   );
 };
 
