@@ -29,6 +29,8 @@ export default function Home({ ResumeText }) {
   const privateProjects = t.privateProjects;
   const skills = t.skills;
 
+  console.log(jobs);
+
   return (
     <>
       <NextSeo
@@ -44,65 +46,32 @@ export default function Home({ ResumeText }) {
           {/* Experiences */}
           <div className={styles.ExperienceList}>
             <SectionHeading title={t.experience} />
-            <Experience
-              title={jobs.superego.title}
-              title2={jobs.superego.title2}
-              location={jobs.superego.location}
-              timeFrame={jobs.superego.timeFrame}
-              description={jobs.superego.description}
-              cases={jobs.superego.cases}
-            />
-            <Experience
-              title={jobs.StepUp.title}
-              title2={jobs.StepUp.title2}
-              location={jobs.StepUp.location}
-              timeFrame={jobs.StepUp.timeFrame}
-              description={jobs.StepUp.description}
-              cases={jobs.StepUp.cases}
-            />
-            <Experience
-              title={jobs.StepUpIntern.title}
-              title2={jobs.StepUpIntern.title2}
-              location={jobs.StepUpIntern.location}
-              timeFrame="Aug 2018 - Okt 2018"
-              description={jobs.StepUpIntern.description}
-            />
-            <Experience
-              title={jobs.SecPro.title}
-              title2={jobs.SecPro.title2}
-              location={jobs.SecPro.location}
-              timeFrame="Aug 2017 - Nov 2017"
-              description={jobs.SecPro.description}
-            />
-            <Experience
-              title={jobs.GejstGruppen.title}
-              title2={jobs.GejstGruppen.title2}
-              location={jobs.GejstGruppen.location}
-              timeFrame="Jan 2017 - Apr 2017"
-              description={jobs.GejstGruppen.description}
-            />
+
+            {Object.keys(jobs).map((key, index) => (
+              <Experience
+                key={index}
+                title={jobs[key].title}
+                title2={jobs[key].title2}
+                location={jobs[key].location}
+                timeFrame={jobs[key].timeFrame}
+                description={jobs[key].description}
+                cases={jobs[key].cases}
+              />
+            ))}
           </div>
 
           {/* Education */}
           <div className={styles.ExperienceList}>
             <SectionHeading title={t.education} />
-            <Experience
-              title={educations.Webdeveloper.title}
-              title2={educations.Webdeveloper.title2}
-              location={educations.Webdeveloper.location}
-              timeFrame="Aug 2017 - Okt 2019"
-            />
-            <Experience
-              title={educations.MultimedieDesigner.title}
-              title2={educations.MultimedieDesigner.title2}
-              location={educations.MultimedieDesigner.location}
-              timeFrame="Aug 2015 - Nov 2017"
-            />
-            <Experience
-              title={educations.STX.title}
-              location={educations.STX.location}
-              timeFrame="Aug 2011 - Jun 2014"
-            />
+            {Object.keys(educations).map((key, index) => (
+              <Experience
+                key={index}
+                title={educations[key].title}
+                title2={educations[key].title2}
+                location={educations[key].location}
+                timeFrame={educations[key].timeFrame}
+              />
+            ))}
           </div>
 
           {/* Personal projects */}
@@ -116,25 +85,14 @@ export default function Home({ ResumeText }) {
                 buttonText={t.Readr.button}
               />
               <div className={styles.githubProjects}>
-                <Project
-                  title={privateProjects.weather.title}
-                  body={privateProjects.weather.body}
-                  href="https://github.com/MathiasOxholm/weather-app"
-                />
-                <Project
-                  title={privateProjects.tree.title}
-                  body={privateProjects.tree.body}
-                  href="https://github.com/MathiasOxholm/linktree"
-                />
-                <Project
-                  title={privateProjects.calculator.title}
-                  body={privateProjects.calculator.body}
-                  href="https://github.com/MathiasOxholm/calculator"
-                />
-                <Project
-                  title={privateProjects.thisOrThat.title}
-                  body={privateProjects.thisOrThat.body}
-                />
+                {Object.keys(privateProjects).map((key, index) => (
+                  <Project
+                    key={index}
+                    title={privateProjects[key].title}
+                    body={privateProjects[key].body}
+                    href={privateProjects[key].href}
+                  />
+                ))}
               </div>
             </div>
           </div>

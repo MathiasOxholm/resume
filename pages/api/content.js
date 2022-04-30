@@ -11,6 +11,7 @@ const ResumeText = {
     experience: "Erfaring",
     education: "Uddanelse",
     projects: "Private projekter",
+    skillHeading: "Færdigheder",
     hero: {
       title: `frontend udvikler med 3+ års erfaring i special${"\u00AD"}udvikling af websites, shops og apps.`,
       phone: "Telefon",
@@ -165,6 +166,7 @@ const ResumeText = {
     experience: "Experience",
     education: "Education",
     projects: "Private projects",
+    skillHeading: "Skills",
     hero: {
       title:
         "Frontend developer with 3+ years of experience in creating websites, shops and apps.",
