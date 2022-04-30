@@ -106,22 +106,34 @@ const ResumeText = {
     },
     skills: {
       title: "Færdigheder",
-      languages: ["HTML5", "CSS3 / SCSS / LESS", "PHP", "JS / jQuery"],
-      development: [
-        "WordPress / ACF",
-        "React / Next.js",
-        "ReactNative / Expo",
-        "NPM / Yarn",
-        "Bootstrap 5",
-        "GSAP",
-      ],
-      design: ["Figma", "Adobe XD", "Adobe Illustrator", "Adobe Photoshop"],
-      personally: [
-        "Ydmyg og nede på jorden",
-        "Tech, gaming og Web3 nørd",
-        "Altid frisk på en bajer",
-        "Guitarist og musiknørd",
-      ],
+      languages: {
+        title: "Sprog",
+        content: ["HTML5", "CSS3 / SCSS / LESS", "PHP", "JS / jQuery"],
+      },
+      development: {
+        title: "Udvikling",
+        content: [
+          "WordPress / ACF",
+          "React / Next.js",
+          "ReactNative / Expo",
+          "NPM / Yarn",
+          "Bootstrap 5",
+          "GSAP",
+        ],
+      },
+      design: {
+        title: "Design",
+        content: ["Figma", "Adobe XD", "Adobe Illustrator", "Adobe Photoshop"],
+      },
+      personally: {
+        title: "Personligt",
+        content: [
+          "Ydmyg og nede på jorden",
+          "Tech, gaming og Web3 nørd",
+          "Altid frisk på en bajer",
+          "Guitarist og musiknørd",
+        ],
+      },
     },
   },
   en: {
@@ -228,22 +240,34 @@ const ResumeText = {
     },
     skills: {
       title: "Skills",
-      languages: ["HTML5", "CSS3 / SCSS / LESS", "PHP", "JS / jQuery"],
-      development: [
-        "WordPress / ACF",
-        "React / Next.js",
-        "ReactNative / Expo",
-        "NPM / Yarn",
-        "Bootstrap 5",
-        "GSAP",
-      ],
-      design: ["Figma", "Adobe XD", "Adobe Illustrator", "Adobe Photoshop"],
-      personally: [
-        "Humble and down to earth",
-        "Tech, gaming and Web3 nerd",
-        "Always down for a beer",
-        "Guitarist and music nerd",
-      ],
+      languages: {
+        title: "Languages",
+        content: ["HTML5", "CSS3 / SCSS / LESS", "PHP", "JS / jQuery"],
+      },
+      development: {
+        title: "Languages",
+        content: [
+          "WordPress / ACF",
+          "React / Next.js",
+          "ReactNative / Expo",
+          "NPM / Yarn",
+          "Bootstrap 5",
+          "GSAP",
+        ],
+      },
+      design: {
+        title: "Design",
+        content: ["Figma", "Adobe XD", "Adobe Illustrator", "Adobe Photoshop"],
+      },
+      personally: {
+        title: "Personally",
+        content: [
+          "Humble and down to earth",
+          "Tech, gaming and Web3 nerd",
+          "Always down for a beer",
+          "Guitarist and music nerd",
+        ],
+      },
     },
   },
 };

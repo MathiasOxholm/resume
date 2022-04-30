@@ -27,6 +27,7 @@ export default function Home({ ResumeText }) {
   const jobs = t.jobs;
   const educations = t.educations;
   const privateProjects = t.privateProjects;
+  const skills = t.skills;
 
   return (
     <>
@@ -136,7 +137,7 @@ export default function Home({ ResumeText }) {
           </div>
 
           <div>
-            <SectionHeading title={"Skills"} />
+            <SectionHeading title={skills.title} />
             <div className={styles.grid}>
               <Skill title="Languages">
                 <li>HTML5</li>
