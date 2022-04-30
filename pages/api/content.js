@@ -17,6 +17,7 @@ const ResumeText = {
       age: "Alder",
       date: "31 / 05 / 1995",
       address: "Adresse",
+      location: "6000 Kolding",
       about: "Kort fortalt",
       description:
         "Uddannet webudvikler med speciale i Wordpress og UI / UX. Jeg arbejder pt som Frontend udvikler hos Superego i Horsens, hvor jeg både sidder med specialudvikling af hjemmesider samt kundekontakt og fungerer som sparringspartner ift. designprocesser.",
@@ -42,6 +43,7 @@ const ResumeText = {
       StepUp: {
         title: "Grafisk Ansvarlig",
         title2: "& Webudvikler",
+        location: "StepUp Media ApS - Kolding",
         description:
           "Udover min praktik, var jeg fuldtidsansat i ca. 2 år og siden fastansættelsen fik jeg lavet over 70 unikke website og webshop designs i Adobe XD. Derudover har jeg selv kodet 24 af siderne op i WordPress.",
         timeFrame: "Feb 2019 - Mar 2021",
@@ -50,6 +52,7 @@ const ResumeText = {
       StepUpIntern: {
         title: "Webudvikler",
         title2: "- Praktikant",
+        location: "StepUp Media ApS - Kolding",
         description:
           "3 måneders virksomhedspraktik via Webudvikler uddannelsen. Oplæring i WordPress, PHP, LESS, jQuery mm.",
         timeFrame: "",
@@ -57,6 +60,7 @@ const ResumeText = {
       SecPro: {
         title: "Webudvikler",
         title2: "- Studiearbejde",
+        location: "SecPro Sikring A/S - Kolding",
         description:
           "Projektbaseret studiejob under Multimediedesigneren. WordPress + WooCommerce shop management.",
         timeFrame: "",
@@ -64,6 +68,7 @@ const ResumeText = {
       GejstGruppen: {
         title: "Webudvikler",
         title2: "- Praktikant",
+        location: "GejstGruppen ApS - Kolding",
         description:
           "3 måneders virksomhedspraktik via Multimediedesigner uddannelsen. Udarbejdelse af skræddersyet spørgeskema i PHP.",
         timeFrame: "",
@@ -73,13 +78,16 @@ const ResumeText = {
       Webdeveloper: {
         title: "International Webudvikling",
         title2: "- Formidling og design",
+        location: "IBA Erhvervsakademi Kolding",
       },
       MultimedieDesigner: {
         title: `Multimedie${"\u00AD"}designer`,
         title2: "m. speciale i videoproduktion",
+        location: "IBA Erhvervsakademi Kolding",
       },
       STX: {
         title: `STX Studenter${"\u00AD"}eksamen`,
+        location: "Munkensdam gymnasium - Kolding",
       },
     },
     Readr: {
@@ -125,6 +133,7 @@ const ResumeText = {
           "Bootstrap 5",
           "GSAP",
           "Firebase",
+          "GitHub",
         ],
       },
       design: {
@@ -157,6 +166,7 @@ const ResumeText = {
       age: "Age",
       date: "05 / 31 / 1995",
       address: "Address",
+      location: "Kolding, Denmark",
       about: "About me",
     },
     menu: {
@@ -169,7 +179,7 @@ const ResumeText = {
       superego: {
         title: "Frontend",
         title2: "Developer",
-        location: "Superego - Horsens",
+        location: "Superego - Horsens, Denmark",
         description:
           "At Superego, I am the lead developer on all custom solutions built in WordPress. PHP, HTML, SCSS, JS / jQuery, gsap, Github and more are some of the technologies I use on a daily basis.",
         timeFrame: "Apr 2021 - Now",
@@ -178,6 +188,7 @@ const ResumeText = {
       StepUp: {
         title: "Graphic designer ",
         title2: "& Web Developer",
+        location: "StepUp Media ApS - Kolding, Denmark",
         description:
           "Udover min praktik, var jeg fuldtidsansat i ca. 2 år og siden fastansættelsen fik jeg lavet over 70 unikke website og webshop designs i Adobe XD. Derudover har jeg selv kodet 24 af siderne op i WordPress.",
         timeFrame: "Feb 2019 - Mar 2021",
@@ -186,6 +197,7 @@ const ResumeText = {
       StepUpIntern: {
         title: "Web Developer",
         title2: "- Internship",
+        location: "StepUp Media ApS - Kolding, Denmark",
         description:
           "3 months company internship via the Web Developer education.",
         timeFrame: "",
@@ -193,6 +205,7 @@ const ResumeText = {
       SecPro: {
         title: "Web Developer",
         title2: "- Student job",
+        location: "SecPro Sikring A/S - Kolding, Denmark",
         description:
           "Project-based study job under the Multimedia Designer. WordPress + WooCommerce shop management.",
         timeFrame: "",
@@ -200,6 +213,7 @@ const ResumeText = {
       GejstGruppen: {
         title: "Web Developer",
         title2: "- Internship",
+        location: "GejstGruppen ApS - Kolding, Denmark",
         description:
           "3 months company internship via the Multimedia Designer education. Development of custom questionnaire in PHP.",
         timeFrame: "",
@@ -209,13 +223,16 @@ const ResumeText = {
       Webdeveloper: {
         title: "International Web Development",
         title2: "- Communication and design",
+        location: "International Business Academy - Kolding, Denmark",
       },
       MultimedieDesigner: {
         title: "Multimedia designer",
         title2: "Majoring in video production",
+        location: "International Business Academy - Kolding, Denmark",
       },
       STX: {
         title: "STX Student Exam",
+        location: "Munkensdam gymnasium - Kolding, Denmark",
       },
     },
     Readr: {
@@ -261,6 +278,7 @@ const ResumeText = {
           "Bootstrap 5",
           "GSAP",
           "Firebase",
+          "GitHub",
         ],
       },
       design: {
