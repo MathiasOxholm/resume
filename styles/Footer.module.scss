@@ -1,11 +1,23 @@
+@use "mixins" as *;
+
 .Footer {
   width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   padding-block: 2rem;
+  padding-inline: 1.5rem;
+  gap: 1rem;
+
+  @include mq(lg) {
+    flex-direction: row;
+    padding-inline: 4rem;
+    padding-block: 2rem;
+  }
 }
 
 .credit {
   font-size: 1rem;
-  margin-bottom: 0;
+  margin: 0;
 }

@@ -47,3 +47,16 @@
     gap: 2.5rem;
   }
 }
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.5rem;
+  gap: 1.5rem;
+
+  @include mq(lg) {
+    margin-top: 3.5rem;
+    gap: 2.5rem;
+    flex-direction: row;
+  }
+}

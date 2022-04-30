@@ -104,6 +104,25 @@ const ResumeText = {
         body: "Bygget i React Native",
       },
     },
+    skills: {
+      title: "Færdigheder",
+      languages: ["HTML5", "CSS3 / SCSS / LESS", "PHP", "JS / jQuery"],
+      development: [
+        "WordPress / ACF",
+        "React / Next.js",
+        "ReactNative / Expo",
+        "NPM / Yarn",
+        "Bootstrap 5",
+        "GSAP",
+      ],
+      design: ["Figma", "Adobe XD", "Adobe Illustrator", "Adobe Photoshop"],
+      personally: [
+        "Ydmyg og nede på jorden",
+        "Tech, gaming og Web3 nørd",
+        "Altid frisk på en bajer",
+        "Guitarist og musiknørd",
+      ],
+    },
   },
   en: {
     meta: {
@@ -206,6 +225,25 @@ const ResumeText = {
         title: "This or that",
         body: "Built in React Native",
       },
+    },
+    skills: {
+      title: "Skills",
+      languages: ["HTML5", "CSS3 / SCSS / LESS", "PHP", "JS / jQuery"],
+      development: [
+        "WordPress / ACF",
+        "React / Next.js",
+        "ReactNative / Expo",
+        "NPM / Yarn",
+        "Bootstrap 5",
+        "GSAP",
+      ],
+      design: ["Figma", "Adobe XD", "Adobe Illustrator", "Adobe Photoshop"],
+      personally: [
+        "Humble and down to earth",
+        "Tech, gaming and Web3 nerd",
+        "Always down for a beer",
+        "Guitarist and music nerd",
+      ],
     },
   },
 };

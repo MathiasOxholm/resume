@@ -19,6 +19,7 @@
   h3,
   p {
     margin: 0;
+    transition: var(--transition);
   }
 
   &::before {

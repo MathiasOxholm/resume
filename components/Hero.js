@@ -83,10 +83,10 @@ const Hero = ({ data }) => {
             <p className={styles.description}>
               Færdiguddannet Professionsbachelor i International Webudvikling
               (Formidling og design) på IBA Erhvervsakademi Kolding. Jeg
-              arbejder pt som Frontend udvikler hos Superego i Horsens. <br />{" "}
+              arbejder pt som Frontend udvikler hos Superego i Horsens. <br />
               <br /> Midt i en overgangsperiode mellem PHP til JS. Specifikt
               udforsker jeg React / Next.js og finder det betydelig federe end
-              WordPress, PHP og jQuery. Med andre ord:{" "}
+              WordPress, PHP og jQuery. Med andre ord:
               <b>Jeg går aldrig tilbage og søger derfor nye udfordringer.</b>
             </p>
           </div>
