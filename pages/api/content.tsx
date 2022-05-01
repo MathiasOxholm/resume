@@ -31,9 +31,9 @@ const ResumeText = {
       location: "6000 Kolding",
       about: "Kort fortalt",
       description:
-        "Uddannet webudvikler med speciale i Wordpress og UI / UX. Jeg arbejder pt som Frontend udvikler hos Superego i Horsens, hvor jeg både sidder med specialudvikling af hjemmesider samt kundekontakt og fungerer som sparringspartner ift. designprocesser.",
+        "Uddannet webudvikler med speciale i Wordpress og UI / UX. Jeg arbejder pt som Frontend udvikler hos Superego i Horsens, hvor jeg både sidder med specialudvikling af websites / webshops samt kundekontakt og fungerer som sparringspartner ift. designprocesser.",
       description2:
-        "Jeg bevæger mig altid fremad, og søger derfor nye udfordringer, da jeg personligt er midt i en overgangsperiode fra PHP til JS. Mere specifikt udforsker jeg React / Next.js, og selvom jeg ikke har opgivet mine spidskompetencer, finder jeg det lige nu betydeligt sjovere end hverdagens opgaver inden for PHP og jQuery. Jeg glæder mig til at finde en arbejdsplads, hvor jeg kan udvikle mig yderligere og sparre med mine kollegaer om fede projekter. Jeg er bosat i Kolding men har bil og er desuden villig til at flytte for det rette job.",
+        "Jeg bevæger mig altid fremad, og søger derfor nye udfordringer, da jeg personligt er midt i en overgangsperiode fra PHP til JS. Mere specifikt udforsker jeg React, TypeScript og Next.js, og selvom jeg ikke har opgivet mine spidskompetencer, finder jeg det betydeligt sjovere end hverdagens opgaver inden for PHP og jQuery. Jeg glæder mig til at finde en arbejdsplads, hvor jeg kan udvikle mig yderligere og sparre med mine kollegaer om fede projekter. Jeg er bosat i Kolding men har bil og er desuden mere end villig til at flytte for det rette job.",
     },
     menu: {
       experience: "Erfaring",
@@ -56,7 +56,7 @@ const ResumeText = {
         title2: "& Webudvikler",
         location: "StepUp Media ApS - Kolding",
         description:
-          "Udover min praktik, var jeg fuldtidsansat i ca. 2 år og siden fastansættelsen fik jeg lavet over 70 unikke website og webshop designs i Adobe XD. Derudover har jeg selv kodet 24 af siderne op i WordPress.",
+          "Udover min praktik, var jeg fuldtidsansat i over 2 år og siden fastansættelsen, fik jeg lavet over 90 unikke website og webshop designs i Adobe XD. Derudover har jeg kodet 24 af siderne op i WordPress (custom tema).",
         timeFrame: "Feb 2019 - Mar 2021",
         cases: ["circusgin.com", "rhetor.dk"],
       },
@@ -73,7 +73,7 @@ const ResumeText = {
         title2: "- Studiearbejde",
         location: "SecPro Sikring A/S - Kolding",
         description:
-          "Projektbaseret studiejob under Multimediedesigneren. WordPress + WooCommerce shop management.",
+          "Projektbaseret studiejob under Multimediedesign uddannelsen. WordPress + WooCommerce shop management.",
         timeFrame: "Aug 2017 - Nov 2017",
       },
       GejstGruppen: {
@@ -81,7 +81,7 @@ const ResumeText = {
         title2: "- Praktikant",
         location: "GejstGruppen ApS - Kolding",
         description:
-          "3 måneders virksomhedspraktik via Multimediedesigner uddannelsen. Udarbejdelse af skræddersyet spørgeskema i PHP.",
+          "3 måneders virksomhedspraktik via Multimediedesign uddannelsen. Udarbejdelse af skræddersyet spørgeskema i PHP.",
         timeFrame: "Jan 2017 - Apr 2017",
       },
     },
@@ -211,7 +211,7 @@ const ResumeText = {
         title2: "& Web Developer",
         location: "StepUp Media ApS - Kolding, Denmark",
         description:
-          "Udover min praktik, var jeg fuldtidsansat i ca. 2 år og siden fastansættelsen fik jeg lavet over 70 unikke website og webshop designs i Adobe XD. Derudover har jeg selv kodet 24 af siderne op i WordPress.",
+          "Aside from my internship I was a full-time employee for more than two years. During my employment, I designed more than 90 unique websites and shops in Adobe XD - of which I developed 24 in WordPress (Custom theme).",
         timeFrame: "Feb 2019 - Mar 2021",
         cases: ["circusgin.com", "rhetor.dk"],
       },
@@ -220,7 +220,7 @@ const ResumeText = {
         title2: "- Internship",
         location: "StepUp Media ApS - Kolding, Denmark",
         description:
-          "3 months company internship via the Web Developer education.",
+          "3 months company internship as part of the Web Developer education. Training in WordPress, PHP, LESS and jQuery.",
         timeFrame: "Aug 2018 - Oct 2018",
       },
       SecPro: {
@@ -228,7 +228,7 @@ const ResumeText = {
         title2: "- Student job",
         location: "SecPro Sikring A/S - Kolding, Denmark",
         description:
-          "Project-based study job under the Multimedia Designer. WordPress + WooCommerce shop management.",
+          "Project-based student job during the Multimedia Design education. WordPress + WooCommerce shop management.",
         timeFrame: "Aug 2017 - Nov 2017",
       },
       GejstGruppen: {
@@ -236,7 +236,7 @@ const ResumeText = {
         title2: "- Internship",
         location: "GejstGruppen ApS - Kolding, Denmark",
         description:
-          "3 months company internship via the Multimedia Designer education. Development of custom questionnaire in PHP.",
+          "3 months company internship during the Multimedia Design education. Development of custom questionnaire in PHP.",
         timeFrame: "Jan 2017 - Apr 2017",
       },
     },
