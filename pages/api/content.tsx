@@ -186,9 +186,9 @@ const ResumeText = {
       location: "Kolding, Denmark",
       about: "About me",
       description:
-        "Uddannet webudvikler med speciale i Wordpress og UI / UX. Jeg arbejder pt som Frontend udvikler hos Superego i Horsens, hvor jeg både sidder med specialudvikling af hjemmesider samt kundekontakt og fungerer som sparringspartner ift. designprocesser.",
+        "Web developer specialising in Wordpress and UI / UX. I currently work as Frontend developer at Superego in Horsens where my tasks include custom development of websites / shops, customer consultations and acting as sparring partner during design processes.",
       description2:
-        "Jeg bevæger mig altid fremad, og søger derfor nye udfordringer, da jeg personligt er midt i en overgangsperiode fra PHP til JS. Mere specifikt udforsker jeg React / Next.js, og selvom jeg ikke har opgivet mine spidskompetencer, finder jeg det lige nu betydeligt sjovere end hverdagens opgaver inden for PHP og jQuery. Jeg glæder mig til at finde en arbejdsplads, hvor jeg kan udvikle mig yderligere og sparre med mine kollegaer om fede projekter. Jeg er bosat i Kolding men har bil og er desuden villig til at flytte for det rette job.",
+        "I am always moving forward and currently seeking new opportunities since I am in a transition phase from PHP to JS, more specifically, I’m exploring React, TypeScript and Next.js. While I haven’t abandoned my core competencies, I find these new areas a lot more fun than the everyday PHP and jQuery tasks. I am looking forward to finding a place of work where I can grow professionally and sparre with colleagues about cool projects. Currently located in Kolding but own a car and I am more than willing to move for the right job opportunity.",
     },
     menu: {
       experience: "Experience",
