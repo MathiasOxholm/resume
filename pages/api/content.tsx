@@ -49,7 +49,7 @@ const ResumeText = {
         description:
           "Hos Superego er jeg lead developer på alle custom løsninger bygget i WordPress. PHP, HTML, SCSS, JS / jQuery, gsap, Github mm. er nogle af de teknologier jeg benytter mig af til dagligt.",
         timeFrame: "Apr 2021 - Nu",
-        cases: ["leinvest.dk", "kommpas.dk", "zurface.dk"],
+        cases: ["leinvest.dk", "kommpas.dk", "zurface.dk", "superego.nu"],
       },
       StepUp: {
         title: "Grafisk Ansvarlig",
@@ -204,7 +204,7 @@ const ResumeText = {
         description:
           "At Superego, I am the lead developer on all custom solutions built in WordPress. PHP, HTML, SCSS, JS / jQuery, gsap, Github and more are some of the technologies I use on a daily basis.",
         timeFrame: "Apr 2021 - Now",
-        cases: ["leinvest.dk", "kommpas.dk", "zurface.dk"],
+        cases: ["leinvest.dk", "kommpas.dk", "zurface.dk", "superego.nu"],
       },
       StepUp: {
         title: "Graphic designer ",
